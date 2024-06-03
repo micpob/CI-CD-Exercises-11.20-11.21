@@ -1,0 +1,111 @@
+#left_sidebar {
+    height: 100%;
+    flex: 1 1 20%;   
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container_timer {
+    min-width: 100%;
+    min-height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thermo {
+    position: absolute;
+    min-width: 100%;
+    min-height: 90%;
+    background: url(Res/Thermometers/3d.svg) no-repeat center;   
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; 
+    z-index: 3;
+}
+
+#gray_bar {
+  min-width: 100%;
+  min-height: 0%;
+  background-color:#c8b7b7;  
+  position: absolute;
+  top: 0%; /*needed for top to bottom transition instead of bottom to top*/
+  left: 0%; /*needed for left to right transition instead of right to left*/ 
+  z-index: 2;
+}
+
+#thermometer_background {
+    min-width: 30%;
+    min-height: 75%;    
+    background-color: rgb(189, 3, 3);
+    background-image: linear-gradient(green, yellow 55%, red 70%);
+    position: absolute;
+    bottom: 10%; 
+    z-index: 1;
+}
+
+#test {
+    display: none;
+}
+
+#show_scores {
+    min-width: 18vw;
+    min-height: 11vw;
+    border: none;
+    outline: none;
+    background-image: url(Res/Highscore/shelfb.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (orientation: portrait) {
+
+   #left_sidebar {
+       width: 100%; 
+       height: auto; 
+       flex: 1 1 15%;   
+       flex-direction: row;
+       justify-content: space-evenly;
+   }	
+
+   #container_timer {   
+    min-width: 50vw;
+    min-height: 100%;    
+    }
+
+    #thermo {
+        min-width: 90%;
+        min-height: 100%;
+        background: url(Res/Thermometers/3d_laydown.svg) no-repeat center;  
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain; 
+    }
+
+    #gray_bar {
+        min-width: 0%;
+        min-height: 100%;
+    }
+
+    #thermometer_background {
+        min-width: 75%;
+        min-height: 40%;    
+        background-color: rgb(189, 3, 3);
+        background-image: linear-gradient(to right, green, yellow 55%, red 70%);
+        bottom: 30%; 
+    }
+
+    #show_scores {
+        min-width: 28vw;
+        min-height: 17vw;
+    }
+   
+}
+   

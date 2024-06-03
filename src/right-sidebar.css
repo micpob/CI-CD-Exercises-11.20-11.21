@@ -1,0 +1,132 @@
+#right_sidebar {
+    height: 100%;
+	flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container_round_info {
+    font-family: ChawP;
+    background: url(Res/Clocks/frame.svg) no-repeat center;   
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 15.5vw;
+    min-height: 15.5vw;
+    padding: 3.5vw;
+    color: whitesmoke;
+}
+
+#container_round_info h2 {
+    visibility: hidden;
+    margin-top: 2.5vh;
+    margin-bottom: 0;
+    font-size: 2.2vw;    
+ }
+ 
+ #container_round_info h3 {
+    margin-top: 1.2vh;
+    font-size: 3.4vw;   
+ }
+
+#container_arrows {
+    width: 100%; 
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_arrows button { 
+    height: 13vh;
+    width: 13vh;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container_arrows button:hover { 
+    cursor: pointer;
+}
+
+#container_left_right_arrows {
+    width: 100%;
+    display: flex;	
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left_arrow {
+    background-image: url(Res/Arrows/yellow_left.svg);    
+	}
+	
+#up_arrow {
+	background-image: url(Res/Arrows/yellow_up.svg);
+	}
+	
+#right_arrow {    
+	background-image: url(Res/Arrows/yellow_right.svg);
+	}
+	
+#down_arrow {
+	background-image: url(Res/Arrows/yellow_down.svg);
+	}
+	
+	
+#container_arrows button.arrowButtonActive {
+    background-color: orange;
+}
+
+
+@media (orientation: portrait) {
+           
+   #right_sidebar {
+        width: 100%;
+        flex: 1 1 15%;
+        display: flex;
+        flex-direction: row;     
+   }
+
+   #container_round_info {    
+    min-width: 18vh;
+    min-height: 18vh;
+    padding: 3.5vw;    
+   }
+
+   #container_round_info h2 {    
+    font-size: 2.2vh;    
+   }
+ 
+    #container_round_info h3 {
+        font-size: 3.4vh;   
+    }
+       
+   #container_arrows {
+       width: auto; 
+       min-width: 35%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #container_arrows button {
+       height: 13vw;
+       width: 13vw;
+   }
+
+   #container_left_right_arrows {  
+    justify-content: space-between;
+   }
+   
+}

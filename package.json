@@ -1,0 +1,28 @@
+{
+  "name": "zenter",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.7.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0"
+  },
+  "scripts": {
+    "start": "cd src && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micpob/zenter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micpob/zenter/issues"
+  },
+  "homepage": "https://github.com/micpob/zenter#readme"
+}
