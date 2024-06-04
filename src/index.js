@@ -128,7 +128,7 @@ app.post('/new-record', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  res.send('ok')
+  res.send('ok!')
 });
 
 app.listen(port, () => {
