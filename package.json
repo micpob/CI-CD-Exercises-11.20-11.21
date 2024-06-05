@@ -14,15 +14,5 @@
   "scripts": {
     "start": "cd src && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/micpob/zenter.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/micpob/zenter/issues"
-  },
-  "homepage": "https://github.com/micpob/zenter#readme"
+  }
 }

@@ -1,12 +1,6 @@
 name: Deployment pipeline
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize]
+on: [push]
 
 jobs:
   simple_deployment_pipeline:
@@ -21,5 +15,4 @@ jobs:
       - name: Deploy
         env:
           deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
-        run: |
-          curl "$deploy_url"
+        run: curl "$deploy_url"
